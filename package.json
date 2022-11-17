@@ -11,7 +11,7 @@
   },
   "name": "mongo-db",
   "version": "1.0.0",
-  "main": "App.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
