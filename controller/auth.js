@@ -25,8 +25,8 @@ exports.register = async (req, res) => {
   const transport = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'Abdulsalaamnoibi1@gmail.com',
-      pass: 'mxivpkhpjtydavvj', //follow the 2-step-verification process to get the password
+      user: process.env.EMAIL,
+      pass: process.env.PASS, //follow the 2-step-verification process to get the password
     },
   });
 

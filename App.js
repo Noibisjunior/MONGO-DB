@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/', router);
-
+// app.use('landingpage')
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URI);
