@@ -1,26 +1,43 @@
 {
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-error": "^0.0.2",
     "express-handlebars": "^6.0.6",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.7.2",
-    "nodemailer": "^6.8.0"
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
+    "npm": "^9.1.2",
+    "validator": "^13.7.0"
   },
   "name": "mongo-db",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
+    "@types/cookie-parser": "^1.4.3",
     "@types/express": "^4.17.14",
-    "@types/nodemailer": "^6.4.6"
-  }
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/nodemailer": "^6.4.6",
+    "@types/validator": "^13.7.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noibisjunior/MONGO-DB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Noibisjunior/MONGO-DB/issues"
+  },
+  "homepage": "https://github.com/Noibisjunior/MONGO-DB#readme",
+  "description": ""
 }
