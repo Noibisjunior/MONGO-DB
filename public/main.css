@@ -1,65 +1,163 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+}
+body {
+  /* overflow: hidden; */
+  /* width: 100%; */
+}
+#big{
+  font-size: 40px;
+}
+#des{
+  color: black;
+}
+#black {
+  color: black;
+}
+#pad {
+  padding-top: 150px;
+  color: white;
+}
+.container1 {
+  background-color: black;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-body{
-    background-color: black;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.container2 {
+  background-color: white;
+  min-width: 400px;
+  min-height: 300px;
+  position: absolute;
+  margin: 20px;
+  padding: 20px;
+}
+h2 {
+  text-align: center;
+  padding-top: 10px;
 }
 
-.container{
-    background-color: white;
-    min-width: 400px;
-    min-height: 300px;
-    position:absolute;
-    margin:20px ;
+.form-control {
+  font-size: 20px;
+  position: relative;
+  padding: 10px;
+  margin: 30px;
 }
-h2{
-    text-align: center;
-    padding-top: 10px;
-}
-
-.form-control{
-    font-size:20px;
-    position: relative;
-    padding: 10px;
-    margin:30px;
-}
-.form-control input{
-    width: 100%;
-    display: block;
-    border: 0;
-    border-bottom: 1px solid black;
-    font-size:15px;
+.form-control input {
+  width: 100%;
+  display: block;
+  border: 0;
+  border-bottom: 1px solid black;
+  font-size: 15px;
 }
 
-.form-control input:focus,.form-control input:valid{
-    outline:none;
+.form-control input:focus,
+.form-control input:valid {
+  outline: none;
 }
-.btn{
-    width:50%;
-    margin-left: 25%;
-    padding: 15px;
-    /* margin:0 auto; */
-    background-color: lightblue;
-    border-radius: 10px;
-    border: lightblue;
-    cursor:pointer;
-    font-size: 20px;   
+.btn {
+  width: 50%;
+  margin-left: 25%;
+  padding: 15px;
+  /* margin:0 auto; */
+  background-color: lightblue;
+  border-radius: 10px;
+  border: lightblue;
+  cursor: pointer;
+  font-size: 20px;
 }
 
-
+.text {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+.text a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  color: black;
+}
+p {
+  color: white;
+}
+  li a{
+  text-decoration: none;
+  color: white;
+}
+#card{
+  justify-content: center;
+  align-items: center;
+}
+.dev{
+  color: black;
+  text-decoration: none;
+}
+.container3{
+  background-image: url('/public/dark.jpg');
+  color: white;
+  background-size: cover;
+  padding: 25px;
+}
+  #bar{
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+  font-size: 15px;
+}
+#bar:hover{
+  background-color: black;
+  color: white;
+}
 .text{
-    padding-top: 5px;
-    text-align:center;
-    font-size: 20px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
 }
-.text a{
-    text-decoration: none;
-    color:black;
+
+.text2{
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.line{
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.text:hover{
+  color: black;
+}
+@media only screen and (max-width: 600px){
+#bar{
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+  font-size: 15px;
+}
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+ #bar{
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+  font-size: 15px;
+}
 }

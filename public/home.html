@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>Educational registration form</title>
+    <link rel="shortcut icon" href="/public/download.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        /* min-height: 100%; */
+      }
+
+      button {
+        padding: 5px;
+        border-radius: 10px;
+        background: black;
+        text-decoration: none;
+        font-size: 15px;
+        color: #fff;
+        width: 300px;
+        height: 100px;
+        margin: 10px;
+      }
+.text{
+  text-decoration: none;
+  color: white;
+}
+.text:hover{
+  color: white;
+}
+      
+      .container1 {
+        background-image: url('/public/dark.jpg');
+        background-size: cover;
+        /* margin: 0; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .container2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* height: 100vh; */
+      }
+
+      .about {
+        color: white;
+        font-size: 30px;
+        padding: 30px;
+        text-align: center;
+      }
+      @media (min-width: 568px) {
+        html,
+        body {
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="about">ABOUT NOIBIS DEV CODING BOOTCAMP</div>
+      <div class="about">
+        We focus on teaching our students the area of specialization of software
+        develepment and its fundamentals
+      </div>
+      <div class="container2">
+      <button><a href="/register" class="text">SIGNUP</a></button>
+      <button><a href="/login" class="text"> LOGIN</a></button>
+      </div>
+    </div>
+  </body>
+</html>
