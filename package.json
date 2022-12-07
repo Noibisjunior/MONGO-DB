@@ -2,9 +2,9 @@
   "name": "express2",
   "version": "1.0.0",
   "description": "this is an introduction to the express framework",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
