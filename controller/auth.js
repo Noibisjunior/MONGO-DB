@@ -67,7 +67,7 @@ exports.login = async (req, res) => {
     const userExist = await user.comparePassword(password);
     if (!userExist) {
       // console.log('please provide a valid password');
-      return res.status(400).json({ msg: 'please provide a valid password' });
+      return res.status(400).render('login', { msg: `please provide a correct password` });
     }
     const token = user.createJWT();
     // console.log(token);
