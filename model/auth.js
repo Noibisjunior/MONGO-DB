@@ -1,7 +1,7 @@
 //mongoose an express module for creating tables in mongoDb
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
-const JWT = require('Jsonwebtoken');
+const JWT = require('jsonwebtoken');
 const validator = require('validator')
 const authSchema = mongoose.Schema({
   email: {
