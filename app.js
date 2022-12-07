@@ -17,9 +17,8 @@ const { engine } = require('express-handlebars');
 // const authMiddleware = require('./middleware/authentication');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const notFound = require('./middleware/notFound');
+const notFound = require('./middleware/notfound');
 const server = require('./middleware/internalServer');
-const HomeServer = require('./middleware/Home')
 // app.use(express.static('public'))
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
