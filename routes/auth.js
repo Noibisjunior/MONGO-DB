@@ -10,11 +10,13 @@ const {
   loginPage,
   dashboard,
   form,
+  email,
   logOut
 } = require('../controller/auth');
 //creating a post route
 router.route('/register').post(register)
 router.route('/login').post(login)
+router.route('/email').post(email)
 
 //creating a get route
 router.route('/register').get(registerPage);

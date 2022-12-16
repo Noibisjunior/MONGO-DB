@@ -66,20 +66,21 @@
 <section class='bg-warning text-light p-5'>
   <div class='container'>
     <div class='d-md-flex justify-content-between align-item-center'>
-      <h3 class='mb-3 mb-md-0'>Sign Up For Our Newsletter</h3>
-      <div class='input-group news-input'>
+      <h3 class=>Sign Up For Our Newsletter</h3>
+      {{!-- <div class='input-group news-input'> --}}
+        <form action="/email"    method="post">
+          {{msl}}
         <input
-          type='text'
-          class='form-control'
+          type='email'
+          name="email"
           placeholder='Enter your Email' required
         />
         <button
-          class='btn btn-dark btn-sm'
-          type='submit'
-          onclick='submit()'
-        >SUBMIT</button>                                                                                                
+          class='btn btn-dark btn-md'
+          id="form-style"
+        >SUBMIT</button>        
+        </form>                                                                                        
       </div>
-    </div>
   </div>
 </section>
 <!-- mode-of-learning using boxes-->

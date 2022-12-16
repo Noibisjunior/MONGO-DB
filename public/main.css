@@ -36,6 +36,9 @@ body {
   margin: 20px;
   padding: 20px;
 }
+#form-style{
+  margin:20px;
+}
 h2 {
   text-align: center;
   padding-top: 10px;

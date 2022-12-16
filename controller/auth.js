@@ -52,6 +52,38 @@ exports.register = async (req, res) => {
   })
   return res.status(201).redirect('login');
 }
+exports.email = async (req,res) =>{
+  const {email} = req.body
+  const transport = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.EMAIL,
+      pass: process.env.PASS, //follow the 2-step-verification process to get the password
+    },
+  });
+
+  const mailOptions = {
+    from: 'Abdulsalaamnoibi1@gmail.com',
+    to: req.body.email,
+    subject: 'NOIBISDEV CODING BOOTCAMP',
+    text: 'Welcome To Our Coding Bootcamp,At NOIBISDEV we ensure that every student maximize their potentials by learning from our bootcamp training',
+  };
+
+  transport.sendMail(mailOptions, (err, info) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log('please check,we just sent you an email' + info.response);
+    }
+  });
+  const token = req.cookies.token;
+  const payload = JWT.verify(token, process.env.JWT_SECRET);
+  const username = payload.username.toString().toUpperCase();
+  return res.render('dashboard', { msl: `Thanks for subscribing to our Newsletter`,msg:username });
+  
+ }
+  
+
 
 //creating functionality for the login route
 exports.login = async (req, res) => {
